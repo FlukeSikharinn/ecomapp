@@ -295,7 +295,7 @@ const ShopProfile = () => {
             </Tabs>
         </Box>
         <div>
-            {shopId !== 0 && tapValue === 0 && <ProductList shopId={shopId} />}
+            {shopId !== 0 && tapValue === 0 && <ProductList shopId={shopId} isShop={true} />}
             {tapValue === 1 && <Order user={'shop'} />}
             {tapValue === 2 && <Address />}
             {/* {tapValue === 3 && <p>List Content</p>} */}
